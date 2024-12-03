@@ -1,13 +1,29 @@
 # scrollable_positioned_list
 
+## What is this?
+
+This is a fork of  [ScrollablePositionedList](https://pub.dev/packages/scrollable_positioned_list) with `ScrollPosition` exposed in the `ScrollOffsetController`. A `ScrollablePositionedList` works much like the builder version of `ListView` except that the list can be scrolled or jumped to a specific item.
+
+This can be used to programatically move the `ScrollablePositionedList` using methods like `jumpTo`. Currently the only change from upststeam is the following line:
+
+```dart
+
+  /// ScrollPosition of the current ScrollablePositionedList. Values and methods
+  /// such as pixels, maxScrollExtent and jumpTo are not necessarily defined to
+  /// start from the beginning of the list. Whenevrt itemScrollController.jumpTo
+  /// is called, the ScrollPosition will begin from the offset that index.
+  /// position.jumpTo will cause the application to freeze at very large values
+  /// as it must build all the widgets between the starting offset and the ending
+  /// offset.
+  ScrollPosition get position => _scrollableListState!.primary.scrollController.position;
+
+```
+
 A flutter list that allows scrolling to a specific item in the list.
 
 Also allows determining what items are currently visible.
 
 ## Usage
-
-A `ScrollablePositionedList` works much like the builder version of `ListView`
-except that the list can be scrolled or jumped to a specific item.
 
 ### Example
 
