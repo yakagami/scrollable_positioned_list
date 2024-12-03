@@ -4,7 +4,7 @@
 
 This is a fork of  [ScrollablePositionedList](https://pub.dev/packages/scrollable_positioned_list) with `ScrollPosition` exposed in the `ScrollOffsetController`. A `ScrollablePositionedList` works much like the builder version of `ListView` except that the list can be scrolled or jumped to a specific item.
 
-This can be used to programatically move the `ScrollablePositionedList` using methods like `jumpTo`. Currently the only change from upststeam is the following line:
+Aside from the original features of `ScrollablePositionedList`, this can be used to programmatically move the `ScrollablePositionedList` using methods like `jumpTo`. Currently the only change from upststeam is the following line:
 
 ```dart
 
