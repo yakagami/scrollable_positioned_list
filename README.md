@@ -19,9 +19,14 @@ Aside from the original features of `ScrollablePositionedList`, this can be used
 
 ```
 
-A flutter list that allows scrolling to a specific item in the list.
+You can use this package by adding the following lines to your `pubspec.yaml`:
 
-Also allows determining what items are currently visible.
+```yml
+
+  scrollable_positioned_list:
+    git: https://github.com/yakagami/scrollable_positioned_list
+
+```
 
 ## Usage
 
