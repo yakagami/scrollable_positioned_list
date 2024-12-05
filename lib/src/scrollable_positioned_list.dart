@@ -289,6 +289,8 @@ class ScrollOffsetController {
   /// ending offset.
   ScrollPosition get position => _scrollableListState!.primary.scrollController.position;
 
+  double get offset => _scrollableListState!.primary.scrollController.offset;
+
   Future<void> animateScroll(
       {required double offset,
       required Duration duration,
