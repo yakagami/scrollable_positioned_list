@@ -1,4 +1,4 @@
-name: scrollable_positioned_list
+name: open_scrollable_positioned_list
 version: 0.3.8+1
 description: >
   A list with helper methods to programmatically scroll to an item.
